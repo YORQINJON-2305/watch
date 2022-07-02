@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .visually-hidden {
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(50%);
@@ -37,7 +44,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
@@ -62,15 +70,23 @@ body{
 }
 
 .site-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     padding: 24px;
     border-bottom: 1px solid #1617DB;
     
 }
 
 .header-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
@@ -98,8 +114,12 @@ body{
 }
 
 .intro{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 
@@ -125,8 +145,12 @@ body{
 }
 
 .intro-start-link-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .intro-start-link{
@@ -177,9 +201,15 @@ body{
 }
 
 .our-service{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 90px;
 }
 
@@ -229,8 +259,12 @@ body{
 /* Our Available Product */
 
 .apple-logo-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .apple-logo-wrapper::before{
@@ -263,9 +297,15 @@ body{
 }
 
 .available-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     margin-bottom: 160px;
     padding: 0;
@@ -279,9 +319,15 @@ body{
 /* Media */
 
 .best-watch{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 166px;
 }
 
@@ -300,8 +346,12 @@ body{
 
 .video-link-wrapper{
     width: 186px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 20px;
     border: 1px solid #E5E5E5;
     border-radius: 6px;
@@ -336,8 +386,12 @@ body{
 }
 
 .person-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
 }
 
 .person-info::after{
@@ -375,6 +429,8 @@ body{
 }
 
 .footer-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -384,8 +440,12 @@ body{
 }
 
 .footer-icon-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style: none;
     margin-top: 20px;
     padding: 0;
@@ -396,6 +456,8 @@ body{
 }
 
 .footer-text-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin: 0;
@@ -423,5 +485,6 @@ body{
 }
 
 .footer-input:focus{
-    box-shadow: 0px 0px 2px 0px blue;
+    -webkit-box-shadow: 0px 0px 2px 0px blue;
+            box-shadow: 0px 0px 2px 0px blue;
 }
