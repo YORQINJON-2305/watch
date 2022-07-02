@@ -1,0 +1,427 @@
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), 
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff');
+}
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+         url('../fonts/poppins-v20-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), 
+         url('../fonts/poppins-v20-latin-700.woff') format('woff'); 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.header-section{
+    background-image: url("../images/headerbackground.png"), url("../images/hand.png");
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-position: center, calc(50% - 580px);
+    margin-bottom: 95px;
+}
+
+
+.container{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 24px;
+    border-bottom: 1px solid #1617DB;
+    
+}
+
+.header-list{
+    display: flex;
+    list-style: none;
+}
+
+.header-list-item{
+    margin-right: 60px;
+}
+
+.header-item-link{
+    text-decoration: none;
+    color: #01010D;
+}
+
+.header-btn-link{
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1617DB;
+    border-radius: 6px;
+}
+
+.intro-section{
+    padding: 165px 0px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro-start{
+    width: 459px;
+}
+
+.intro-start-text{
+    font-size: 12px;
+    font-weight: 500;
+    color: #1617DB;
+
+}
+
+.main-title{
+    line-height: 80px;
+    font-size: 67px;
+    margin: 0;
+}
+
+.intro-text{
+    margin-bottom: 50px;
+}
+
+.intro-start-link-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.intro-start-link{
+    margin-right: 30px;
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1617DB;
+    text-decoration: none;
+}
+
+.intro-link-end{
+    background-color: transparent;
+    border: 1px solid #1617DB;
+    color: #1617DB;
+}
+
+.intro-link-end::before{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url("../images/apple-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: left;
+    margin-right: 10px;
+    content: "";
+}
+
+.intro-img{
+    position: absolute;
+    left: 560px;
+}
+
+/* Our Service */
+
+.service-title-wrapper{
+    width: 515px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.service-title{
+    font-size: 51px;
+    margin: 0;
+}
+
+.our-service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.service-list{
+    padding: 0;
+}
+
+.service-list-item{
+    width: 172px;
+    list-style: none;
+    text-align: center;
+}
+
+.service-list-item::before{
+    width: 163px;
+    height: 163px;
+    display: block;
+    background-image: url("../images/android.png");
+    content: "";
+}
+
+.internet::before{
+    background-image: url("../images/browser.png");
+}
+
+.music::before{
+    background-image: url("../images/music.png");
+}
+
+.battery::before{
+    background-image: url("../images/battery.png");
+}
+
+.setting::before{
+    background-image: url("../images/setting.png");
+}
+
+.message::before{
+    background-image: url("../images/message.png");
+    
+}
+
+.service-item-product-name{
+    margin: 0;
+}
+
+/* Our Available Product */
+
+.apple-logo-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.apple-logo-wrapper::before{
+    width: 15px;
+    height: 18px;
+    display: block;
+    margin-right: 8px;
+    background-image: url("../images/apple-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50%) calc(50% - 1.5px);
+    content: "";
+}
+
+.apple-logo-text{
+    font-size: 12px;
+    color:#1617DB;
+}
+
+.available-title{
+    font-size: 51px;
+    margin: 0;
+    margin-bottom: 25px;
+
+}
+
+.available-text-wrapper{
+    width: 485px;
+    margin-bottom: 70px;
+}
+
+.available-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 160px;
+    padding: 0;
+    list-style: none;
+}
+
+.available-item{
+    width: 302px;
+}
+
+/* Media */
+
+.best-watch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 166px;
+}
+
+.best-watch-end{
+    width: 486px;
+}
+
+.best-watch-title{
+    font-size: 51px;
+}
+
+.best-watch-text-wrapper{
+    width: 440px;
+    margin-bottom: 50px;
+}
+
+.video-link-wrapper{
+    width: 186px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+}
+
+.video-link-wrapper::before{
+    width: 36px;
+    height: 36px;
+    display: block;
+    background-image: url("../images/video-icon.png");
+    background-repeat: no-repeat;
+    background-position:  calc(50% ) calc(50% + 4.5px);
+    margin-right: 10px;
+    content: "";
+}
+
+.video-link{
+    text-decoration: none;
+    color: #1617DB;
+    font-weight: 500;
+}
+
+/* Info */
+
+.info-text-wrapper{
+    width: 691px;
+    margin-left: 30px;
+    margin-bottom: 162px;
+    padding: 34px 67px;
+    background-image: url("../images/bg-dotted.png");
+    background-repeat: no-repeat;
+}
+
+.person-info{
+    display: flex;
+    align-items: center; 
+}
+
+.person-info::after{
+    width: 57px;
+    height: 60px;
+    display: inline-block;
+    background-image: url("../images/person.png");
+    background-position: calc(50%) calc(50% + 10px);
+    background-repeat: no-repeat;
+    opacity: 1;
+    content: "";
+}
+
+.person-name{
+    margin-right: 28px;
+}
+
+.ronald{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.inner-text{
+    margin: 0;
+    font-size: 14px;
+    color: #01010D;
+    opacity: 0.7;
+}
+
+/* Footer */
+
+.footer{
+    background-color:#F7F7F7;
+    padding: 50px 0px 120px 0px;
+}
+
+.footer-wrap{
+    display: flex;
+}
+
+.logo-icon-wrap{
+    width: 170px;
+    margin-right: 130px;
+}
+
+.footer-icon-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.footer-icon-list-item{
+    margin-right: 28px;
+}
+
+.footer-text-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-text-list-item{
+    list-style: none;
+    margin-right: 130px;
+}
+
+.footer-item-link{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: #01010D;
+}
+
+.footer-input{
+    width: 163px;
+    padding: 9px ;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.footer-input:focus{
+    box-shadow: 0px 0px 2px 0px blue;
+}
